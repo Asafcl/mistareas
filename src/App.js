@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Logo from "./componentes/asaf_logo";
+import ListaDeTareas from './componentes/ListaDeTareas'
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="misTareas">
+      <div className="logoCont">
+        <Logo />
+      </div>
+      <div className="tareasCont">
+        <h1>Mis Tareas</h1>
+        <ListaDeTareas/>
+       
+      </div>
     </div>
   );
 }
